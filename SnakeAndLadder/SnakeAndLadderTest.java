@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class SnakeAndLadderTest {
     public static void main(String[] args) {
-        Scanner inputnumber = new Scanner(System.in);
-        System.out.println("Enter the names of player");
-        String player1 = inputnumber.next();
-        String player2 = inputnumber.next();
+
         int player1position = 0;
         int player2position = 0;
         int Dice = 0;
@@ -20,27 +17,36 @@ public class SnakeAndLadderTest {
             if ((player1position + Dice) <= 100)
 
                 player1position = Dice + player1position;
-            if (player1position == 9) {  // for ladder
-                System.out.println("player1position moves to 30");
-            } else if (player1position == 25) {
-                System.out.println("player1position climb to 44");
+            System.out.println("player1 : " + Dice);
+            if (player1position == 2) {  // for ladder
+                System.out.println("player1position moves to 23");
+            } else if (player1position == 8) {
+                System.out.println("player1position climb to 34");
+            } else if (player1position == 20) {
+                System.out.println("player1position climb to 77");
+            } else if (player1position == 32) {
+                System.out.println("player1position climb to 68");
             } else if (player1position == 41) {
-                System.out.println("player1position climb to 62");
+                System.out.println("player1position climb to 79");
             } else if (player1position == 74) {
-                System.out.println("player1position climb to 95");
+                System.out.println("player1position climb to 88");
             } else {
                 System.out.println("No ladder to move");
             }
 
             //for snakes moves for player1
-            if (player1position == 37) {
-                System.out.println("player1position goes down to 18");
-            } else if (player1position == 65) {
-                System.out.println(" player1position goes down to 36");
-            } else if (player1position == 70) {
-                System.out.println(" player1position goes down to 54");
-            } else if (player1position == 81) {
-                System.out.println(" player1position goes down to 77");
+            if (player1position == 12) {
+                System.out.println("player1position goes down to 9");
+            } else if (player1position == 38) {
+                System.out.println(" player1position goes down to 15");
+            } else if (player1position == 43) {
+                System.out.println(" player1position goes down to 5");
+            } else if (player1position == 53) {
+                System.out.println(" player1position goes down to 33");
+            } else if (player1position == 61) {
+                System.out.println(" player1position goes down to 37");
+            } else if (player1position == 97) {
+                System.out.println(" player1position goes down to 25");
             } else {
                 System.out.println(" No snakes byte ");
             }
@@ -54,39 +60,50 @@ public class SnakeAndLadderTest {
             if ((player2position + Dice) <= 100)
 
                 player2position = Dice + player2position;
-            if (player2position == 9) {  // for ladder moves for player2
-                System.out.println("player2position climb to 30");
-            } else if (player2position == 25) {
-                System.out.println("player2position climb to 44");
+            System.out.println("player1 : " + Dice);
+            if (player2position == 2) {  // for ladder
+                System.out.println("player2position moves to 23");
+            } else if (player2position == 8) {
+                System.out.println("player2position climb to 34");
+            } else if (player2position == 20) {
+                System.out.println("player2position climb to 77");
+            } else if (player2position == 32) {
+                System.out.println("player2position climb to 68");
             } else if (player2position == 41) {
-                System.out.println("player2position climb to 62");
+                System.out.println("player2position climb to 79");
             } else if (player2position == 74) {
-                System.out.println("player2position climb to 95");
+                System.out.println("player2position climb to 88");
             } else {
                 System.out.println("No ladder to move");
             }
 
             //for snakes moves for player2
-            if (player2position == 37) {
-                System.out.println("player1position goes down to 18");
-            } else if (player2position == 65) {
-                System.out.println(" player1position goes down to 36");
-            } else if (player2position == 70) {
-                System.out.println(" player1position goes down to 54");
-            } else if (player2position == 81) {
-                System.out.println(" player1position goes down to 77");
+            if (player2position == 12) {
+                System.out.println("player2position goes down to 9");
+            } else if (player2position == 38) {
+                System.out.println(" player2position goes down to 15");
+            } else if (player2position == 43) {
+                System.out.println(" player2position goes down to 5");
+            } else if (player2position == 53) {
+                System.out.println(" player2position goes down to 33");
+            } else if (player2position == 61) {
+                System.out.println(" player2position goes down to 37");
+            } else if (player2position == 97) {
+                System.out.println(" player2position goes down to 25");
             } else {
-                System.out.println(" No snakes to goes down ");
+                System.out.println(" No snakes byte ");
             }
-        }
 
-        if (player1position >= 100) {
-            System.out.println(" player1 is  winner");
-        } else {
-            System.out.println("player2 is loser");
+            if (player1position == 100) {
+                System.out.println(" Mohan is  winner");
+            }
+            if (player2position == 100) {
+                System.out.println(" Praveen is winner");
+            }
         }
     }
 }
+
 
 
 
